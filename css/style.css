@@ -1,0 +1,23 @@
+body{
+    background-color: #e5e5e5e5 ;
+}
+
+.nav-extended{
+    background-image: url('https://media.istockphoto.com/photos/3d-movie-film-reel-render-picture-id182753774?k=20&m=182753774&s=170667a&w=0&h=Cw-XAiarjT5FAhd49qj22R2Lw_SMo9m0q1_flK6TGvs=');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: soft-light;
+}
+
+nav ul li.active, .tab a.active{
+    border-bottom: solid 2px white;
+    background-color: transparent;
+}
+nav ul li:hover{
+    background-color: transparent;
+}
+
+.nav-header{
+    text-shadow: 2px 2px 15px black;
+}
