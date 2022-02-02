@@ -1,7 +1,22 @@
 <?php
  include_once('cabecalho.php');
 ?>
+<?php
 
+$filme1 = [
+    "titulo"=>"Os Vingadores", 
+    "nota" => 8.6,
+    "sinopse" => "Os vingadores, são um filme bem bacana, para todo o publico",
+    "poster" => ""
+];
+
+
+
+
+
+
+
+?>
 <body>
     <nav class="nav-extended light-blue lighten-2">
         <div class="nav-wrapper ">
@@ -82,9 +97,27 @@
             </div>
         </div>
 
+         <!-- Quarto Card -->
+         <div class="col s3">
+            <div class="card hoverable">
+                <div class="card-image">
+                    <img src="" alt="<?= $filme1["poster"];?>">
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+                </div>
+                <div class="card-content ">
 
+                    <p class="valign-wrapper">
+                        <!--Centralizar o icone com a nota-->
+                        <i class="material-icons amber-text">star</i><?= $filme1["nota"];?>
+                    </p>
+                    <span class="card-title"><?php echo $filme1["titulo"];?></span>
+                    <p><?= $filme1["sinopse"];?></p>
+                </div>
+            </div>
+        </div>
+        
     </div>
-
+    
 
 </body>
 
